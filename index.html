@@ -3,45 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
+  <main>
+    <section class="result">
+      <div class="result-card">
+        <h3 class="result-title">Your Result</h3>
+        <div class="result-circle">
+          <span>76</span>
+          <p>of 100</p>
+        </div>
+        <p class="result-info">
+          <span>Great</span>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+    </section>
+    <section class="summary">
+      <h3 class="summary-title">Summary</h3>
+      <div class="summary-rows">
+        <div class="row">
+          <div class="row-category">
+            <img src="./assets/images/icon-reaction.svg" alt="electricity icon">
+            <p>Reaction</p>
+          </div>
+          <div class="row-score">
+            <p><span>80</span> / 100</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-category">
+            <img src="./assets/images/icon-memory.svg" alt="brain icon">
+            <p>Memory</p>
+          </div>
+          <div class="row-score">
+            <p><span>92</span> / 100</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-category">
+            <img src="./assets/images/icon-verbal.svg" alt="dialogue icon">
+            <p>Verbal</p>
+          </div>
+          <div class="row-score">
+            <p><span>61</span> / 100</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-category">
+            <img src="./assets/images/icon-visual.svg" alt="eye icon">
+            <p>Visual</p>
+          </div>
+          <div class="row-score">
+            <p><span>72</span> / 100</p>
+          </div>
+        </div>
+      </div>
+      <button class="summary-btn">Continue</button>
+    </section>
+  </main> 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Camille846">Camille Gomes</a>.
   </div>
 </body>
 </html>
